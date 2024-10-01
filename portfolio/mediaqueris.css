@@ -9,9 +9,12 @@
     }
 }
 
-
-
-
+@media screen and (max-width: 400px){
+    .about_info{
+        margin: 0 0px 0 0.9rem ;
+        width: 6.5rem;
+    }  
+} 
 
 
 
@@ -24,6 +27,7 @@
     display: none;
     
     }
+    
     #hambruger-nav{
         display: flex;
         gap: 14rem;
@@ -38,7 +42,7 @@
         display: block;
     }
     .arrow{
-        display: block;
+        display: none;
     }
     section,
     .section-container{
@@ -55,6 +59,10 @@
 }
 
 @media screen and (max-width: 600px){
+    #hambruger-nav{
+        gap: 13rem;
+        margin-top: 1rem;
+    }
     #contact, 
     footer{
         height: 40vh;
@@ -62,8 +70,10 @@
     .arrow{
         display: none;
     }
+   
     #profile{
-        height: 83vh;
+        
+        height: 74vh;
         margin-bottom: 0;
     }
     article{
@@ -78,7 +88,7 @@
     .btn-container{
         flex-wrap: wrap;
     }
-    
+
     .contact-info-container{
           margin: 0;
     }
@@ -91,7 +101,8 @@
           font-size: 1.2rem;
     }
     .logo{
-        font-size: 1rem;
+        font-size: 1.5rem;
+
     }
     .nav_link{
         flex-direction: column;
@@ -100,7 +111,8 @@
     }
     .section__pic-container{
         width: auto;
-        height: 40vw;
+        
+        height: 51vw;
         justify-content: center;
     }
     .section__text-p2{
