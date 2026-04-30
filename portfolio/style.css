@@ -3,12 +3,37 @@
     margin: 0;
 }
 @font-face {
-    font-family: 'Poppins';
-    src: url('font/Poppins/Poppins-Regular.ttf') format('truetype');
+    /* font-family: 'Poppins'; */
+    /* src: url('font/Poppins/Poppins-Regular.ttf') format('truetype'); */
   }
 body{
     background-color:  white;
     font-family: "Poppins";
+    background-repeat: no-repeat;
+    background-size: cover;
+        transition: background-image 0.6s ease-in-out;
+
+        /* background-image: url('https://imgs.search.brave.com/OnlEg3TMJDC-hnWFpCBaeRTA0IH-BAL1jFFIqcgUXog/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9DZUF5RGtY/LmpwZw'); */
+
+}
+
+.bg-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: opacity 2s ease-in-out;
+    z-index: -1;
+}
+
+.bg-layer.hidden {
+    opacity: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -27,12 +52,15 @@ a, .btn{
 nav, .nav_link{
      display: flex;
      list-style: none;
+     /* border:5px solid black */
 }
 
 nav{
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 7vw;
+    padding:15px 50px 5px 80px;
+    height: 60px;
+    /* height: 7vw; */
 }
 .nav_link{
     gap: 2rem;
@@ -52,7 +80,8 @@ a:hover{
     text-decoration-color:rgb(181,181,181) ;
 }
 .logo{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 .logo :hover{
     cursor: default;
@@ -150,6 +179,7 @@ section{
 
 .section-container{
     display: flex;
+    
 }
 
 /* PROFILE SECTION */
@@ -159,6 +189,7 @@ section{
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    /* border-width: 51px solid black; */
 }
 
 .section__pic-container{
@@ -169,6 +200,10 @@ section{
 }
 
 .section__text{
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 440px;
+    border-radius: 10px;
     align-self: center;
     text-align: center;
 }
@@ -179,10 +214,12 @@ section{
 
 .section__text__p1{
     text-align: center;
+    font-size: 1.5rem;
 }
 .section__text__p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    color: #000;
 }
 .title{
     font-size: 3rem;
@@ -212,7 +249,7 @@ section{
 .btn{
     font-weight: 600;
     transition: all 30ms ease;
-    padding: 1rem;
+    padding: .5rem;
     width: 8rem;
     border-radius: 2rem;
 }
@@ -399,8 +436,11 @@ article .icon{
 /* FOOTER SECTION */
 
 footer{
-    height: 26vh;
-    margin: 0 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
 }
 
 footer p{
