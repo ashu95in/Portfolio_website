@@ -11,7 +11,7 @@ body{
     font-family: "Poppins";
     background-repeat: no-repeat;
     background-size: cover;
-        transition: background-image 0.6s ease-in-out;
+        transition: background-image 2s ease-in-out;
 
         /* background-image: url('https://imgs.search.brave.com/OnlEg3TMJDC-hnWFpCBaeRTA0IH-BAL1jFFIqcgUXog/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9DZUF5RGtY/LmpwZw'); */
 
@@ -189,7 +189,7 @@ section{
     justify-content: center;
     gap: 5rem;
     height: 80vh;
-    /* border-width: 51px solid black; */
+    /* border: 1px solid black; */
 }
 
 .section__pic-container{
@@ -200,12 +200,12 @@ section{
 }
 
 .section__text{
-    background-color: #f4f4f4;
+    background-color: #f4f4f4de;
     padding: 30px;
     width: 440px;
     border-radius: 10px;
     align-self: center;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .section__text p{
@@ -213,17 +213,19 @@ section{
 }
 
 .section__text__p1{
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.5rem;
+    
 }
 .section__text__p2{
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    color: #000;
+    font-size: 1.5rem;
+    /* margin-bottom: .1rem; */
+    /* color: #000; */
 }
 .title{
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2rem;
+    /* text-align: center; */
+     color: #000;
 }
 
 #socials-container{
@@ -242,8 +244,12 @@ section{
 /* BUTTONS */
 .btn-container{
     
-    justify-content: center;
-    gap: 1rem;
+    margin-top: 15px;
+    /* justify-content: center; */
+    gap: .5rem;
+    /* border:2px solid black; */
+    display: flex;
+    flex-direction: row;
 }
 
 .btn{
@@ -258,6 +264,8 @@ section{
 .btn-color-2 {
     border: rgb(53,53, 53) 0.1rem solid;
 }
+
+
 .btn-color-1:hover, 
 .btn-color-2:hover {
    cursor: pointer;
@@ -267,6 +275,14 @@ section{
 .btn-color-2:hover {
    background: rgb(53, 53,53);
    color: white;
+}
+.btn-color-1{
+    /* background-color: #25D366; */
+    border: none;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
 }
 
 .btn-color-1:hover{
@@ -445,4 +461,95 @@ footer{
 
 footer p{
     text-align: center;
+}
+
+
+
+
+
+
+
+/** musice disc styling section*/
+.music-widget {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  z-index: 9999;
+    /* border: 2px solid black; */
+
+}
+
+/* Disc */
+.disc-container {
+  width: 50px;
+  /* height: 50px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.disc {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Rotation animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Marquee */
+.music-marquee {
+      /* border: 2px solid black; */
+
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 250%;
+  overflow: hidden;
+  /* background: rgba(0,0,0,0.7); */
+  color: #fff;
+  /* height: 80px; */
+  padding: 8px 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.music-marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#musicBtn {
+  /* padding: 6px 12px; */
+  position: absolute;
+  top:-50;
+  border: none;
+color: #000;
+  /* background: #25D366; */
+  /* color: white; */
+  border-radius: 20px;
+  cursor: pointer;
 }

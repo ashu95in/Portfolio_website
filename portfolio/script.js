@@ -1,7 +1,7 @@
 function togglemenu(){
     const menu = document.querySelector('.menu_link');
     const icon = document.querySelector('.hambruger_icon');
-    console.log(icon)
+    // console.log(icon)
     menu.classList.toggle("open")
     icon.classList.toggle("open")
 }
@@ -46,9 +46,12 @@ document.addEventListener("click", startMusic);
 
 
 const images = [
-    'https://imgs.search.brave.com/3UkYEDVTPml-wkm2z6MtAgep9E0dP3XmIKWIgFShxT0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9WOFVCcEhR/LmpwZw',
-    'https://imgs.search.brave.com/OnlEg3TMJDC-hnWFpCBaeRTA0IH-BAL1jFFIqcgUXog/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC9DZUF5RGtY/LmpwZw',
-    'https://imgs.search.brave.com/kmB6m2kFX08of0B8w9Mfm_vdmoC4pnv4cpzIjgBoVPM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvYmVh/dXRpZnVsLWZ1bmVy/YWwtY2xvdWRzLXY5/N2NkcW1qYzlnMTh6/ZW8uanBn',
+    // 'https://wallpapercave.com/wp/mVcZwOP.jpg',
+    // 'https://wallpapercave.com/wp/wp2931897.jpg',
+    'https://wallpapercave.com/wp/wp2752789.jpg',
+'https://wallpapercave.com/wp/wp1902093.jpg',
+'https://wallpapercave.com/wp/wp4080969.jpg',
+'https://imgs.search.brave.com/kmB6m2kFX08of0B8w9Mfm_vdmoC4pnv4cpzIjgBoVPM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvYmVh/dXRpZnVsLWZ1bmVy/YWwtY2xvdWRzLXY5/N2NkcW1qYzlnMTh6/ZW8uanBn',
     'https://imgs.search.brave.com/Co_Nx4-yCsZwwU25blbeKoYeFikD40Juty3RZdYVRUs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXM4LmFscGhhY29k/ZXJzLmNvbS8xMDQv/dGh1bWJiaWctMTA0/NjYxOC53ZWJw'
 ];
 
@@ -80,4 +83,4 @@ function changeBackground() {
 document.getElementById('bg1').style.backgroundImage = `url(${images[0]})`;
 
 // Change every 3 seconds
-setInterval(changeBackground, 3000);
+setInterval(changeBackground, 5000);

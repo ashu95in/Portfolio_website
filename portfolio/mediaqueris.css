@@ -64,16 +64,17 @@
         margin-top: 1rem;
     }
     #contact, 
-    footer{
+    /* footer{
         height: 40vh;
-    }
+    } */
     .arrow{
         display: none;
     }
    
     #profile{
-        
-        height: 74vh;
+        display: flex;
+        justify-content: center;
+        /* height: 74vh; */
         margin-bottom: 0;
     }
     article{
@@ -114,6 +115,11 @@
         
         height: 51vw;
         justify-content: center;
+    }
+
+    .section__text{
+     width: 300px;
+     /* margin-top: 150px; */
     }
     .section__text-p2{
         font-size: 1.25rem;
